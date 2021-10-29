@@ -1,27 +1,26 @@
-##Basic program structure
-###Start and end of program
+## Basic program structure
+### Start and end of program
 Every program starts with **`Program:`** and ends with **`End`**
 
-####Example
-<code>
-Program:<br>
+#### Example
+<code>Program:<br>
 ......<br>
 End</code>
 
-###Variable declaration
+### Variable declaration
 Variable declaration is done using `var` keyword
 
-####Example
+#### Example
 <code>
 Program:<br>
 var a<br>
 ......<br>
 End</code>
 
-###New line
+### New line
 Every line of program is separated by new line
 
-####Example
+#### Example
 <code>
 Program://Line 1<br>
 var a//Line 2<br>
@@ -29,10 +28,10 @@ var b//Line 3<br>
 ......<br>
 End</code>
 
-###Expression
+### Expression
 Expression of assignment operation using `=`
 
-####Example
+#### Example
 <code>
 Program:<br>
 var a<br>
