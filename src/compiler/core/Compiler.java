@@ -5,6 +5,7 @@ public class Compiler {
     }
 
     public static LexicalAnalyser lexicalAnalyze(String program) {
-        return LexicalAnalyser.newInstance(program, new Compiler());
+//        return LexicalAnalyser.newInstance(program, new Compiler()).compile();
+        return LexicalAnalyser.newInstance(program, null).compile();
     }
 }

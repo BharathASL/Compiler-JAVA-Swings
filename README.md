@@ -38,3 +38,21 @@ var a<br>
 a = a + c<br>
 ......<br>
 End</code>
+
+### Tokens
+Every token in the program is separated by empty space ` `
+
+#### Example
+<code>
+Program:<br>
+var a c//'var' keyword, identifier 'a' and 'c' are separated by space<br>
+a = a + c<br>
+......<br>
+End</code>
+
+
+# Sample Program
+<code>Program:<br>
+var a b<br>
+a = a + b<br>
+End</code>
