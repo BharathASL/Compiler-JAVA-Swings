@@ -4,6 +4,9 @@ import compiler.core.program.Token;
 
 import java.util.List;
 
+/**
+ * Bean class for Lexical Analysis Report
+ */
 public class LexicalAnalysisReport {
     private final LexicalAnalysisState state;
     private final List<Token> tokens;
