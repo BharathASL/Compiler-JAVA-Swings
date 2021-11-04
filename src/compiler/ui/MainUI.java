@@ -28,14 +28,16 @@ public class MainUI {
         lexicalAnalyze.addActionListener(actionEvent -> {
             LexicalAnalyser lexicalAnalyser = Compiler.lexicalAnalyze(inputCode.getText());//Creates a compiler object and compiler the program for first step
             LexicalAnalysisReport report = lexicalAnalyser.getReport();//Gets report of lexical analysis
-            outputWindow.setText(report.getState().toString() + "\nTokens\t:\t" + report.getTokens().stream().map(Token::toString).collect(Collectors.joining(", ")) + "\n" + (report.getLexicalError() == null ? "" : "Errors\t:\t" + report.getLexicalError()));//Updating the console box
+            outputWindow.setText("" +
+                    report.getState().toString() + "\n" +
+                    "Tokens\t:\t" + report.getTokens().stream().map(Token::toString).collect(Collectors.joining(", ")) + "\n" +
+                    (report.getLexicalError() == null ? "\nTable :\n------------------------\n" + report.getTokens().stream().map(e -> e.toString() + "\t:  " + e.getClass().getSimpleName()).collect(Collectors.joining("\n")) : "Errors\t:\t" + report.getLexicalError()));//Updating the console box
             System.out.println(lexicalAnalyser);//Optional print in native console
         });
         close.addActionListener(actionEvent -> parentFrame.dispose());//Close button click event which closes the swing UI application and program
     }
 
     /**
-     *
      * @return main panel object
      */
     public JPanel getMainPanel() {

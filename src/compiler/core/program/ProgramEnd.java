@@ -16,7 +16,7 @@ public class ProgramEnd extends Token {
      */
     @Override
     public String toString() {
-        return "[PROGRAM_END]"
+        return "End"
 //                + lineNumber + "," + characterAt
                 ;
     }

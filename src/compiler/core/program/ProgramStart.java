@@ -16,7 +16,7 @@ public class ProgramStart extends Token {
      */
     @Override
     public String toString() {
-        return "[PROGRAM_START]"
+        return "Program:"
 //                + lineNumber + "," + characterAt
                 ;
     }
